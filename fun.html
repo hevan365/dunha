@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the dunha</title>
+</head>
+<style>
+    @keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+}
+
+.wavy-text {
+    display: inline-block;
+    animation: wave 2s infinite;
+}
+    body {
+        font-family: fantasy;
+	color:red;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;    /* Centers content vertically */
+    height: 100vh;
+    text-shadow: 1px 1px 2px white, -1px -1px 2px white;
+    }
+p {
+	color: blue;
+
+    background: linear-gradient(90deg, red, darkred, grey, black);
+    background-size: auto;
+    }
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div.a{
+        text-align: center;
+    }
+    footer {
+        background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+        background-size: auto;
+        animation: rainbow 10s infinite;       
+        text-align: center;
+        color:black;
+        text-shadow: white, 1px 1px 2px white, -1px -1px 2px white;
+        font-family:'Times New Roman', Times, serif
+    }
+</style>
+<body>
+    <audio id="background-audio" autoplay loop>
+        <source src="e:\Kairan\fl thingies\Image-Line\FL Studio\Projects\project nu metal\project bossa nova.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="rick roll">
+        <source src="c:\Users\salas\Downloads\Rick Astley - Never Gonna Give You Up (Official Music Video).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="dunha">
+        <source src="e:\DOWNLOADS\botao-do-whatsapp.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        
+        var audio = document.getElementById('background-audio').volume = 0.1;
+        audio.play();
+        var audio = document.getElementById('dunha').volume = 1.0;
+        audio.play()
+        var audio = document.getElementById('rick roll').volume = 0.5;
+        
+    </script>    
+<div style="text-align: center;">
+    <h1 style="
+    background-image: url('https://upload.wikimedia.org/wikipedia/pt/7/73/Trollface.png');
+    background-size: cover;
+">
+        <span class="wavy-text">the</span>
+        <span class="wavy-text">dunha</span>
+        </h1>
+    <p>do you know the dunha?</p>
+    <button onclick="document.getElementById('dunha').play()">yes</button>
+    <button onclick="document.getElementById('rick roll').play()">no</button>
+    <footer>
+        copyright 2025
+    </footer>  
+</body>
+</html>
